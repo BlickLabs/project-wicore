@@ -1,0 +1,429 @@
+.home-cover
+  background-image url("../img/backgrounds/home-cover.jpg")
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  display flex
+  flex-direction column
+  justify-content center
+  height 528px
+  padding-left 215px
+
+  &-title
+    color $wWhite
+    font-size $wFontGiant
+    letter-spacing 0.6px
+    line-height 65px
+
+    &-container
+      margin-bottom 37px
+      max-width 505px
+
+.home-focusprocess
+  background-image url("../img/backgrounds/home-focusprocess.jpg")
+  background-position right
+  background-repeat no-repeat
+  background-size cover
+  padding 90px 0 
+
+.home-focus
+  margin 0 0 95px 0
+
+  &-title
+    color $wStrongBlue
+    font-size $wFontH2
+    letter-spacing 0.4px
+    line-height 46px
+
+    &-container
+      max-width 548px
+      margin-left 215px
+
+  &-special
+    color $wLightBlue
+
+  &-separator
+    background-color $wGray
+    height 1px
+    width 100%
+
+    &-container
+      margin 60px 113px 0 113px
+
+.home-ourprocess
+  box-shadow 0 20px 34px 0 rgba(0, 0, 0, 0.22)
+  margin 0 auto
+  max-width 1064px
+
+  &-content
+    align-items center
+    display flex
+    flex-direction column
+    padding 66px 0 45px 0
+
+  &-title
+    color $wLightBlack
+    font-size $wFontH2
+    letter-spacing 4.7px
+    text-transform uppercase
+
+  &-cards-container
+    display flex
+    flex-wrap wrap
+    margin-top 60px
+
+  &-card
+    height 177px
+    transition all 0.3s
+    width 188px
+
+    &:hover
+      transform scale(0.8)
+      transition all 0.3s
+
+    &-container
+      width 188px
+
+  &-arrow
+    height 15px
+    width 9px
+
+    &-container
+      margin 67px 25px 0 25px
+
+  &-desc
+    color $wLightBlack
+    font-size $wFontH3
+    letter-spacing 0.4px
+    line-height 22px
+
+    &-container
+      margin-top 28px
+
+  &-button-container
+    margin-top 59px
+
+.small-desc
+  font-size $wFontH4
+
+.home-separator
+  &-desktop
+    height auto
+    width 100%
+
+  &-mobile
+    display none
+
+.home-benefits
+  background-image url("../img/backgrounds/home-benefits.jpg")
+  background-position top left
+  background-repeat no-repeat
+  background-size cover
+  display flex
+  flex-direction row
+  justify-content center
+  padding 115px 0 90px 0
+
+  &-left-section
+    margin-right 90px
+
+  &-title
+    color $wStrongBlack
+    font-size $wFontH2
+    letter-spacing 5px
+    line-height 47px
+    text-transform uppercase
+
+    &-container
+      margin-bottom 28px
+
+  &-img
+    height auto
+    width 345px
+
+  &-icon
+    &-one
+      width 26px !important
+    &-two
+      width 30px !important
+
+  &-info
+    width 290px
+
+    &:first-child
+      margin-right 50px
+
+    &-columns
+      display flex
+      flex-direction row
+      margin-top 64px
+
+    &-content
+      cursor pointer
+      display flex
+      flex-direction row
+      margin-bottom 50px
+
+      &:hover .icon-purse,
+      &:hover .icon-like,
+      &:hover .icon-scalable,
+      &:hover .icon-money,
+      &:hover .icon-company
+        transform scale(1.2)
+        transition all 0.3s
+
+    &-section
+      margin 4px 0 0 20px
+
+    &-title
+      color $wLightBlack
+      font-size $wFontH3
+      letter-spacing 0.4px
+      line-height 24px
+      margin-bottom 4px
+
+    &-desc
+      color $wLightBlack
+      font-size $wFontH4
+      letter-spacing 0.5px
+      line-height 18px
+
+.icon
+  &-purse,
+  &-scalable
+    height 26px
+
+  &-like
+    height 28px
+
+  &-money
+    height 20px
+
+  &-company
+    height 25px
+
+.icon-purse,
+.icon-like,
+.icon-scalable,
+.icon-money,
+.icon-company
+  transition all 0.3s
+
+.home-benefits-mobile
+  display none
+
+.home-try
+  align-items center
+  background-image url("../img/backgrounds/home-try.jpg")
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  display flex
+  flex-direction column
+  height 337px
+  justify-content center
+
+  &-title
+    letter-spacing 5.7px
+    text-align center
+    text-transform uppercase
+
+  &-title,
+  &-subtitle
+    color $wWhite
+    font-size $wFontH1
+    line-height 38px
+
+  &-subtitle
+    &-container
+      margin 35px 0
+
+.home-why
+  background-image url("../img/backgrounds/why-wicore.jpg")
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  color $wLightBlack
+  height 433px
+
+  &-info
+    margin-left 100px
+    max-width 260px
+    padding 105px 0 0 0
+
+  &-title
+    font-size $wFontH2
+    letter-spacing 0.5px
+
+    &-container
+      margin-bottom 20px
+
+  &-desc
+    font-size $wFontH3
+    letter-spacing 0.5px
+    line-height 25px
+
+.home-video
+  height 0
+  overflow hidden
+  padding-bottom 56.25%
+  position relative
+
+  & iframe,
+  & object,
+  & embed
+    height 100%
+    left 0
+    position absolute
+    top 0
+    width 100%
+
+@media screen and (max-width 786px)
+  .home-cover
+    background-position -583px
+    background-size cover
+    height 450px
+    padding-left 40px
+
+    &-title
+      font-size $wFontGiantM
+      line-height 30px
+
+  .home-focusprocess
+    padding 20px 0
+
+  .home-focus
+    margin-bottom 0
+
+    &-title
+      font-size $wFontH2M
+      line-height 25px
+
+      &-container
+        margin-left 40px
+
+    &-separator
+      &-container
+        margin 50px 40px 0 40px
+
+  .home-ourprocess
+    margin 0 10px
+
+    &-cards-container
+      justify-content space-between
+      margin-top 40px
+      padding 0 15px
+
+    &-card
+      height auto
+      width 100%
+
+      &-container
+        margin-bottom 20px
+        width 48%
+
+    &-desc
+      font-size $wFontH3M
+      line-height 18px
+
+      &-container
+        margin-top 10px
+
+    &-arrow-container
+      display none
+
+    &-title
+      font-size $wFontH2M
+      text-align center
+
+    &-button-container
+      margin-top 20px
+
+  .small-desc
+    font-size $wFontH3M
+
+  .home-separator
+    &-desktop
+      display none
+
+    &-mobile
+      display block
+      height auto
+      width 100%
+
+  .home-benefits
+    display none
+
+    &-info-content
+      margin 0 auto
+      padding-top 30px
+      width 240px
+
+  .home-benefits-mobile
+    display block
+    margin 40px 0 30px 0
+
+  .home-benefits
+    &-img
+      width 60%
+
+    &-left-section
+      margin-right 0
+
+    &-title
+      text-align center
+
+    &-info
+      &-content
+        flex-direction column
+
+      &-section
+        margin 15px 0 0 0
+
+    &-btn-container
+      margin-top 30px
+      text-align center
+
+  .benefits-carousel
+    &-arrows
+      height 20px
+      width 12px
+
+  .benefits-carousel
+    .owl-prev,
+    .owl-next
+      padding 10px
+
+  .benefits-carousel
+    .owl-nav
+      display flex
+      flex-direction row
+      justify-content space-between
+      margin 0 auto
+      width 90px
+
+  .home-try
+    &-title,
+    &-subtitle
+      font-size $wFontH1M
+
+      &-container
+        margin 35px 10px
+        text-align center
+
+  .home-why
+    background-position -66px
+    height 370px
+
+    &-info
+      margin-left 34px
+      max-width 190px
+
+@media screen and (min-width 506px) and (max-width 862px)
+  .home-cover
+    background-position right
+
+
+    
+
+    

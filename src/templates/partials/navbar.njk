@@ -1,34 +1,48 @@
-<nav class="site-navbar">
+<nav class="site-navbar nunitosans-extrabold">
   <div>
     <a href="index.html">
-      <img class="site-navbar-logo" src="img/logos/dimsa-grey.png" alt="Logo">
+      <img class="site-navbar-logo" src="img/logos/wicore-white-logo.png" alt="Logo">
     </a>
   </div>
   <div class="navbar-option-link-container">
-    <a href="index.html" class="navbar-option-link {% if section == 'index' %} active-link {% endif %}">
-      <span>Inicio</span>
-      <div class="link-decorator {% if section == 'index' %} decorator-active {% endif %}"></div>
+    <a href="index.html" class="navbar-option-link {% if section == 'index' %} active-link active-link-scroll {% endif %}">
+      <div class="navbar-option-link-content">
+        <span>Inicio</span>
+        <div class="link-decorator {% if section == 'index' %} decorator-active {% endif %}"></div>
+      </div>
     </a>
-    <a href="nosotros.html" class="navbar-option-link {% if section == 'servicios' %} active-link {% endif %}">
-      <span>Servicios</span>
-      <div class="link-decorator {% if section == 'servicios' %} decorator-active {% endif %}"></div>
+    <a href="servicios.html" class="navbar-option-link {% if section == 'servicios' %} active-link active-link-scroll {% endif %}">
+      <div class="navbar-option-link-content">
+        <span>Servicios</span>
+        <div class="link-decorator {% if section == 'servicios' %} decorator-active {% endif %}"></div>
+        </div>
     </a>
-    <a href="nosotros.html" class="navbar-option-link {% if section == 'nosotros' %} active-link {% endif %}">
-      <span>Nosotros</span>
-      <div class="link-decorator {% if section == 'nosotros' %} decorator-active {% endif %}"></div>
+    <a href="nosotros.html" class="navbar-option-link {% if section == 'nosotros' %} active-link active-link-scroll {% endif %}">
+      <div class="navbar-option-link-content">
+        <span>Nosotros</span>
+        <div class="link-decorator {% if section == 'nosotros' %} decorator-active {% endif %}"></div>
+      </div>
     </a>
     <a href="servicios.html" class="navbar-option-link">
-      <span>Blog</span>
+      <div class="navbar-option-link-content">
+        <span>Blog</span>
+        <div class="link-decorator {% if section == 'blog' %} decorator-active {% endif %}"></div>
+      </div>
     </a>
-    <a href="nosotros.html" class="navbar-option-link {% if section == 'contacto' %} active-link {% endif %}">
-      <span>Contacto</span>
-      <div class="link-decorator {% if section == 'contacto' %} decorator-active {% endif %}"></div>
+    <a href="contactanos.html" class="navbar-option-link {% if section == 'contactanos' %} active-link active-link-scroll {% endif %}">
+      <div class="navbar-option-link-content">
+        <span>Contáctanos</span>
+        <div class="link-decorator {% if section == 'contacto' %} decorator-active {% endif %}"></div>
+      </div>
     </a>
-
-    <a href="contacto.html" class="navbar-option-link {% if section == 'contacto' %} active-link {% endif %}">
-      <span>Contáctanos</span>
-      <div class="link-decorator {% if section == 'contacto' %} decorator-active {% endif %}"></div>
-    </a>
+  </div>
+  <div class="navbar-phone-container">
+    <div class="navbar-phone-content">
+      <div class="navbar-phone-icon-container">
+        <img class="navbar-phone-icon" src="img/icons/phone-icon.png">
+      </div>
+      <span class="navbar-phone-number">55.1209.1276</span>
+    </div>
   </div>
   <div data-attribute="" class="navbar-hamburguer-visibility"  id="hamburgerMenu">
     <div class="navbar-hamburguer" data-attribute="">
@@ -43,7 +57,7 @@
     <div class="hamburger-menu-header" data-attribute="">
       <div class="" data-attribute="">
         <a href="" data-attribute="">
-          <img class="hamburger-logo" src="" data-attribute="" alt="logo hamburger">
+          <img class="hamburger-logo" src="img/logos/wicore-white-logo.png" data-attribute="" alt="logo hamburger">
         </a>
       </div>
       <div class="hamburger-close-container" id="hideHamburger">
@@ -52,28 +66,28 @@
     </div>
     <div class="hamburger-menu-body" data-attribute="">
       <a data-attribute="" href="index.html" class="hamburger-option-link">
-        <div>
-          <span class="hamburger-text">Inicio</span>
-        </div>
-      </a>
-      <a data-attribute="" href="nosotros.html" class="hamburger-option-link">
-        <div>
-          <span class="hamburger-text">Servicios</span>
+        <div class="hamburger-text-container">
+          <span class="hamburger-text {% if section == 'index' %} hamburger-active {% endif %}">Inicio</span>
         </div>
       </a>
       <a data-attribute="" href="servicios.html" class="hamburger-option-link">
-        <div>
-          <span class="hamburger-text">Nosotros</span>
+        <div class="hamburger-text-container">
+          <span class="hamburger-text {% if section == 'servicios' %} hamburger-active {% endif %}">Servicios</span>
         </div>
       </a>
-      <a data-attribute="" href="categorias.html" class="hamburger-option-link">
-        <div>
-          <span class="hamburger-text">Blog</span>
+      <a data-attribute="" href="nosotros.html" class="hamburger-option-link">
+        <div class="hamburger-text-container">
+          <span class="hamburger-text {% if section == 'nosotros' %} hamburger-active {% endif %}">Nosotros</span>
         </div>
       </a>
-      <a data-attribute="" href="contacto.html" class="hamburger-option-link">
-        <div>
-          <span class="hamburger-text">Contáctanos</span>
+      <a data-attribute="" href="" class="hamburger-option-link">
+        <div class="hamburger-text-container">
+          <span class="hamburger-text {% if section == 'blog' %} hamburger-active {% endif %}">Blog</span>
+        </div>
+      </a>
+      <a data-attribute="" href="contactanos.html" class="hamburger-option-link">
+        <div class="hamburger-text-container">
+          <span class="hamburger-text {% if section == 'contactanos' %} hamburger-active {% endif %}">Contáctanos</span>
         </div>
       </a>
     </div>

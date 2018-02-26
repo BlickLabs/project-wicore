@@ -14,6 +14,7 @@ html
 
 body
   font-size inherit
+  margin 0 0 367px 0
 
   &.noscroll
     overflow hidden
@@ -26,6 +27,12 @@ body
 a
   &, &:focus, &:hover, &:active
     text-decoration none
+
+a
+  outline none
+
+h1, h2, h3, h4, h5, h6, p
+  margin 0
 
 #page
   margin 0
@@ -87,6 +94,26 @@ input, textarea, button, select
 textarea
   resize none
 // END FORMS //
+
+.wicore-button
+  background-color $wLightBlue
+  border none
+  color $wWhite
+  cursor pointer
+  font-size $wFontH5
+  height 50px
+  letter-spacing 3px
+  padding 0 32px
+  text-transform uppercase
+  transition all 0.3s
+
+  &:hover
+    background-color $wStrongBlue
+    transition 0.3s
+
+@media screen and (max-width 786px)
+  body
+    margin-bottom 560px
 
 @import 'partials/navbar'
 

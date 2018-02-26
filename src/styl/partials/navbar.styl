@@ -1,95 +1,258 @@
 .site-navbar
-  background white
-  display flex
   align-items center
-  height 78px // Change
+  display flex
+  height 145px
+  justify-content flex-start
   left 0
+  padding 0 0 0 108px
   position fixed
   top 0
+  transition 0.3s background ease
   width 100%
   z-index 12
 
-  & + main
-    padding-top 78px // Change
+  &-logo
+    height 23px
+    margin-right 100px
+    width 108px
 
-.site-navbar__menu-trigger,
-.site-navbar__mobile-logo-container
+.nav-strongblue
+  align-items center
+  background-color $wStrongBlue
+  height 57px
+  transition all 0.3s
+
+.nav-transparent
+  background-color transparent
+  transition all 0.3s
+
+.phone-no-shadow
+  -webkit-filter: drop-shadow(0 0 0)
+  filter: drop-shadow(0 0 0)
+  transition all 0.3s
+
+.phone-shadow
+  -webkit-filter: drop-shadow(-2px 1px 3px)
+  filter: drop-shadow(-2px 1px 3px)
+
+.navbar-option-link
+  color $wWhite
+  cursor pointer
+  font-size remify(13px)
+  letter-spacing 1.9px
+  margin-left 30px
+  text-transform uppercase
+  transition all 0.4s
+
+  &-content
+    position relative
+
+  &.active-link,
+  &:hover
+    color $wWhite
+    transition all 0.6s
+
+  &.active-link-scroll,
+  &:hover
+    color $wLightBlue
+    transition all 0.6s
+
+  &:hover
+    .link-decorator
+      opacity 1
+      transition all 0.4s
+
+  &:hover
+    .remove-decorator
+      opacity 0
+
+  &-container
+    display flex
+    flex-direction row
+
+.link-decorator
+  background-color $wLightBlue
+  height 3px
+  margin-top 6px
+  opacity 0
+  position absolute
+  width 100%
+
+.active-link-scroll
+  color $wLightBlue
+
+.decorator-active
+  opacity 1
+
+.hamburger-menu-container
   display none
 
-.site-navbar__menu-trigger
-  color white // Change
+.navbar-hamburguer-visibility
+  position absolute
 
-.site-navbar__desktop-logo-container
-  img
-    width remify(150) // Change
+.navbar-phone
+  &-container
+    border-bottom 57px solid $wLightBlue
+    border-left 22px solid transparent
+    height 0
+    position absolute
+    right 0
+    top 0
+    width 324px
 
-.site-navbar__menu-container
-  flex-grow 1
-  text-align right
-  height 100%
+  &-content
+    align-items center
+    display flex
+    flex-direction row
+    height 57px
+    padding-left 40px
 
-.site-navbar__menu
-  height 100%
-  display flex
-  align-items center
-  justify-content flex-end
+  &-icon
+      height 17px
+      width 17px
 
-.site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+      &-container
+        margin-right 17px
 
-  &:hover, &.active
-    color white // Change
+    &-number
+      color $wWhite
+      font-size $wFontH4
+      letter-spacing 3.2px
 
-@media screen and (max-width: 876px) // Change
+@media screen and (max-width: 876px)
   .site-navbar
     justify-content space-between
-    height 56px // Change
-    padding 0 18px // Change
+    height 70px
+    padding 0 18px
 
-  .site-navbar__desktop-logo-container
-    img
-      height remify(20) // Change
-      width auto
+  .navbar-phone
+    &-container
+      display none
 
-  .site-navbar__mobile-logo-container
-    display block
-    center-block()
-    width 70% // Change
+  .navbar-option-link-container
+    display none
 
-    img
-      width 100%
-
-  .site-navbar__menu-trigger
-    display block
-    float right
-    font-size 18px // Change
-
-  .site-navbar__menu-container
-    background white // Change
-    height 100vh
-    margin-right 0
-    overflow-y auto
-    position fixed
-    right -280px
-    top 0
-    transition right 0.2s
-    width 280px
-    padding-top 25px // Change
-
-  .site-navbar__menu-container--show-menu
-    right 0
-
-  .site-navbar__menu
-    margin-bottom 30px // Change
-    margin-top 30px // Change
-    text-align left
-    height auto
-    flex-wrap wrap
-
-  .site-navbar__menu-link
+  .navbar-option-link
     display block
     height auto
     display block
     text-align left
     flex-basis 100%
+
+  .navbar-hamburguer-visibility
+    position initial
+      
+  .navbar-hamburguer
+    width 33px
+    height 33px
+    background-color $wStrongBlue
+    cursor pointer
+    display flex
+    justify-content center
+    
+  .align-content-hamburguer
+    display flex
+    flex-direction column
+    justify-content center
+    
+  .line-hamburguer-base
+    height 1px
+    background-color #fff
+
+  .line-hamburguer-lg
+    width: 15px
+    
+  .line-hamburguer-md
+    width 7.5px
+    
+  .margin-vertical-4px
+    margin 4px 0px
+
+  .hamburger-menu-container
+    background-color $wStrongBlue
+    display inline
+    left 0
+    padding-bottom 50px
+    position fixed
+    top 0
+    width 0%
+    z-index 13
+    bottom 0
+    overflow scroll
+    -webkit-transition width 0.5s
+    transition width 0.5s
+    
+  .hamburger-menu-header
+    align-items center
+    display flex
+    flex-direction row
+    justify-content space-between
+    padding 22px 36px 50px 36px
+    
+  .hamburger-logo
+    height 20px
+    width 94px
+    
+  .hamburger-close-container
+    cursor pointer
+    
+  .hamburger-close
+    height 16px
+    width 16px
+
+  .hamburger-menu-body
+    margin-left 36px
+
+  .hamburger-option-link
+    color #fff
+    cursor pointer
+    font-size remify(12)
+    letter-spacing 1.4px
+    text-transform uppercase
+    transition all 0.2s
+
+    .hamburger-active,
+    &:hover
+      font-weight bold
+      text-decoration underline
+      transition all 0.2s
+
+    &.link-active
+      font-family 'OpenSans'
+      font-weight 800
+      
+    &:hover, &.link-active
+      .hamburger-stroke
+        width 100%
+        background-color #fff
+
+  .hamburger-text-container
+    margin 35px 0
+
+  .hamburger-text
+    margin 10px 0
+    padding 10px 0
+
+@media screen and (min-width 877px) and (max-width 1190px)
+  .site-navbar
+    padding-left 30px
+    &-logo
+      margin-right 8px
+
+@media screen and (min-width 877px) and (max-width 1025px)
+  .navbar-phone
+    &-container
+      width 168px
+
+    &-content
+      padding-left 9px
+
+    &-icon
+      height 10px
+      width 10px
+
+      &-container
+        margin-right 9px
+
+    &-number
+      font-size remify(11px)

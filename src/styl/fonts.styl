@@ -1,4 +1,24 @@
 @font-face {
+  font-family: 'GandhiSans';
+  src: url('../fonts/GandhiSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GandhiSans-Italic.woff') format('woff'),
+    url('../fonts/GandhiSans-Italic.ttf')  format('truetype'),
+    url('../fonts/GandhiSans-Italic.svg#Roboto-Light') format('svg');
+  font-weight: $regular;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GandhiSans';
+  src: url('../fonts/GandhiSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GandhiSans-BoldItalic.woff') format('woff'),
+    url('../fonts/GandhiSans-BoldItalic.ttf')  format('truetype'),
+    url('../fonts/GandhiSans-BoldItalic.svg#Roboto-Light') format('svg');
+  font-weight: $bold;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'NunitoSans';
   src: url('../fonts/NunitoSans-Black.eot?#iefix') format('embedded-opentype'),
     url('../fonts/NunitoSans-Black.woff') format('woff'),
@@ -67,6 +87,16 @@
   font-weight: $semibold;
   font-style: normal;
 }
+
+.gandhisans-bolditalic
+  font-family 'GandhiSans'
+  font-weight $bold
+  font-style italic
+
+.gandhisans-italic
+  font-family 'GandhiSans'
+  font-weight $regular
+  font-style italic
 
 .nunitosans-black
   font-family 'NunitoSans'
