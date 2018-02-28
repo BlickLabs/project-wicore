@@ -1,0 +1,178 @@
+.contact
+  margin-top 135px
+
+  &-title
+    color $wStrongBlack
+    font-size $wFontH2
+    letter-spacing 5px
+    text-align center
+    text-transform uppercase
+
+  &-form
+    &-card
+      background-color #fff
+      bottom -260px
+      box-shadow 0 12px 29px 0 rgba(0, 0, 0, 0.22)
+      left 108px
+      padding 70px 123px
+      position absolute
+      right 108px
+
+      &-container
+        height 340px
+        position relative
+
+    &-rows
+      display flex
+      flex-direction row
+
+      &-content
+        width 50%
+
+        &:nth-child(1)
+          margin-right 65px
+
+    &-content
+      display flex
+      flex-direction column
+      margin-bottom 43px
+
+    &-label
+      color $wStrongBlack
+      font-size $wFontH4
+      letter-spacing 1px
+
+    &-input
+      border-bottom solid 2px #f0f0f0
+      border-left 0
+      border-right 0
+      border-top 0
+      color $wLightBlack
+      font-size $wFontH4
+      padding 8px 12px
+      transition all 0.3s
+
+      &:focus
+        border-bottom solid 2px $wLightBlue
+        transition all 0.3s
+    
+  &-panel
+    align-items flex-end
+    background-image url("../img/backgrounds/contact-background.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    display flex
+    flex-direction row
+    height 595px
+    justify-content center
+    padding-bottom 90px
+
+    &-content
+      display flex
+      flex-direction row
+
+    &-info
+      color #fff
+      font-size $wFontH4
+      letter-spacing 1px
+      line-height 22px
+      margin-left 23px
+
+      &-container
+        display flex
+        flex-direction row
+
+        &:nth-child(1)
+          margin 24px 0 20px 0
+
+    &-separator
+      background-color $skyBlue
+      height 194px
+      margin 0 70px
+      width 1px
+
+    &-social
+      height 22px
+      margin-right 19px
+      width 22px
+
+      &-container
+        display flex
+        flex-direction row
+        margin-top 24px
+
+  &-icon
+    &-location
+      height 17px
+      width 12px
+
+    &-phone
+      height 15px
+      width 15px
+
+    &-mail
+      height 10px
+      width 15px
+
+.align-icons
+  align-items center
+
+@media screen and (min-width 769px) and (max-width 900px)
+  .contact
+    &-panel
+      &-separator
+        margin 0 30px
+
+    &-form
+      &-card
+        left 66px
+        right 66px
+
+@media screen and (max-width 768px)
+  .contact
+    &-form
+      &-card
+        bottom -115px
+        left 30px
+        padding 30px
+        right 30px
+
+        &-container
+          height 500px
+
+      &-rows
+        flex-direction column
+
+        &-content
+          width 100%
+
+          &:nth-child(1)
+            margin-right 0
+
+    &-panel
+      padding-bottom 50px
+
+      &-content
+        align-items center
+        flex-direction column
+
+      &-info
+        &-container
+          &:nth-child(1)
+            margin 0 0 20px 0
+
+      &-separator
+        height 1px
+        margin 30px 0
+        width 194px
+
+      &-social
+        margin-right 0
+
+        &-container
+          margin-top 0
+
+          & a:nth-child(1)
+            margin-right 19px
+
