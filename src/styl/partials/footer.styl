@@ -1,7 +1,7 @@
 .site-footer
   background-color $wWhite
   bottom 108px
-  box-shadow 0 7px 30px 0 rgba(0, 0, 0, 0.22)
+  box-shadow 0 7px 30px -3px rgba(0, 0, 0, 0.1)
   display flex
   flex-direction row
   height 300px
@@ -36,7 +36,7 @@
       margin-bottom 30px
 
   &-titles
-    color $wblack
+    color #313131
     font-size $wFontH4
     letter-spacing 2px
     text-transform uppercase
@@ -52,10 +52,10 @@
 
   &-text,
   a
-    color $wLightBlack
+    color #787878
 
   &-link
-    color $wLightBlack
+    color #787878
     transition all 0.3s
 
   &-icon
@@ -91,4 +91,13 @@
     &-titles
       &-container
         margin-bottom 15px
-  
+
+@media screen and (min-width 787px) and (max-width 1230px)
+ .site-footer
+   left 35px
+   padding-left 30px
+   padding-right 30px
+   right 35px
+
+   &-info-section
+     margin-left 30px
