@@ -1,0 +1,326 @@
+.aboutus
+  margin-top 118px
+
+  &-title
+    color #4b4b4b
+    font-size remify(27px)
+    letter-spacing 5px
+    line-height 47px
+    text-align center
+    text-transform uppercase
+
+    &-container
+      margin-bottom 10px
+
+  &-subtitle
+    color #3c3c3c
+    font-size remify(20px)
+    letter-spacing 0.5px
+    line-height 24px
+    text-align center
+
+  &-cards
+    &-container
+      display flex
+      flex-wrap wrap
+      margin 65px auto 119px auto
+      max-width 1062px
+
+  &-card
+    align-items center
+    border solid 1px #f1f1f1
+    cursor pointer
+    display flex
+    flex-direction column
+    height 155px
+    margin 0 24px
+    padding-top 24px
+    transition all 0.3s
+    width 174px
+
+    &:first-child
+      margin-left 0
+
+    &:last-child
+      margin-right 0
+
+    &:hover
+      border transparent
+      box-shadow 0 16px 33px 0 rgba(0, 0, 0, 0.24)
+      transition all 0.3s
+
+    &-title
+      color #545454
+      font-size remify(15px)
+      letter-spacing 0.3px
+      line-height 23px
+      text-align center
+
+  &-icon
+    &-container
+      height 39px
+      margin-bottom 10px
+
+    &-shipments
+      height 33px
+      width 39px
+
+    &-like
+      height 34px
+      width 35px
+
+    &-saving
+      height 26px
+      width 38px
+
+    &-increase
+      height 36px
+      width 35px
+
+    &-time
+      height 39px
+      width 39px
+
+  &-why
+    background-image url("../img/backgrounds/about-bg-why.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 510px
+    padding 61px 38% 0 147px
+    position relative
+
+    &-title
+      color #fff
+      font-size remify(27px)
+      letter-spacing 0.6px
+      line-height 24px
+
+      &-container
+        margin-bottom 39px
+
+    &-list
+      color #fff
+      font-size remify(13px)
+      letter-spacing 0.6px
+      line-height 26px
+      list-style none
+      padding-left 34px
+
+      & li
+        margin-bottom 20px
+
+      & li:before
+        border-radius 50%
+        background-color #fff
+        content ""
+        height 3px
+        left -25px
+        position absolute
+        top 11px
+        width 3px
+
+      &-container
+        position relative
+
+    &-img
+      height 539px
+      width 460px
+
+      &-container
+        position absolute
+        right 0
+        top -14.5px
+
+  &-separator
+    background-color #cfcfcf
+    height 1px
+    width 100%
+
+    &-container
+      margin 115px 10% 91px 10%
+
+  &-leaders
+    display flex
+    flex-wrap wrap
+    margin 0 auto 140px auto
+    max-width 1030px
+
+    &-card
+      display flex
+      flex-direction column
+      width 306px
+
+      &:nth-child(2)
+        margin 0 56px
+
+    &-photo
+      height 202px
+      width 202px
+
+      &-container
+        margin-bottom 52px
+        text-align center
+
+    &-title
+      color #4b4b4b
+      font-size remify(20px)
+      letter-spacing 3.7px
+      line-height 47px
+      text-align center
+      text-transform uppercase
+
+      &-container
+        margin-bottom 15px
+
+    &-paragraph
+      color #272727
+      font-size remify(13px)
+      letter-spacing 0.6px
+      line-height 22px
+      text-align justify
+
+      &-container
+        height 218px
+
+    &-in
+      height 41px
+      width 41px
+
+      &-container
+        margin 35px auto 0 auto
+
+@media screen and (max-width 768px)
+  .aboutus
+    &-cards
+      &-container
+        max-width 582px
+
+    &-card
+      margin 0 10px 20px 10px
+
+    &-card:first-child
+      margin-left 10px
+
+    &-why
+      height auto
+      padding 60px 50px
+
+      &-img
+        &-container
+          display none
+
+    &-leaders
+      max-width 652px
+
+      &-card:nth-child(2)
+        margin 0 0 0 40px
+
+      &-card:nth-child(3)
+        margin-top 24px
+
+@media screen and (min-width 600px) and (max-width 666px)
+  .aboutus
+    &-leaders
+      &-card
+        margin auto
+
+      &-card:nth-child(2)
+        margin 24px auto 0 auto
+
+      &-card:nth-child(3)
+        margin initial
+
+@media screen and (max-width 599px)
+  .aboutus
+    &-cards
+      &-container
+        max-width 480px
+    &-card
+      height 140px
+      margin 8px
+      width 143px
+
+      &-title
+        line-height 15px
+
+    &card:first-child
+      margin-left 8px
+
+    &-why
+      height auto
+      padding 30px
+
+      &-list
+        font-size remify(15px)
+        line-height 20px
+        padding-left 25px
+
+        li
+          margin-bottom 20px
+
+      &-img
+        &-container
+          display none
+
+    &-separator
+      &-container
+        margin 60px 10%
+
+    &-leaders
+      &-card
+        border solid 1px #f1f1f1
+        margin-left auto
+        margin-right auto
+        padding-bottom 20px
+        width 300px
+
+      &-card:nth-child(2)
+        margin 15px auto
+
+      &-photo
+        height 150px
+        width 150px
+
+        &-container
+          margin-bottom 20px
+
+      &-paragraph
+        font-size remify(15px)
+        line-height 18px
+
+        &-container
+          height auto
+          padding 0 20px
+
+@media screen and (max-width 494px)
+  .aboutus
+    &-cards
+      &-container
+        max-width 320px
+
+@media screen and (min-width 769px) and (max-width 1076px)
+  .aboutus
+    &-cards
+      &-container
+        max-width 666px
+
+    &-card
+      margin-bottom 24px
+
+    &-card:first-child
+      margin-left 24px
+
+    &-why
+      height 480px
+      padding 50px 52% 0 30px
+
+      &-img
+        height 494px
+        width 422px
+
+        &-container
+          top -6.5px
+
+  .lala
+    color red

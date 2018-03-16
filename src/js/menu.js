@@ -16,7 +16,7 @@ function doSomething(scroll_pos) {
       phoneNavbar.classList.remove('phone-shadow');
       decoratorLink.classList.remove('link-decorator');
       $('.link-decorator').addClass('remove-decorator');
-      //textLink.classList.add('active-link-scroll');
+      textLink.classList.add('active-link');
 
     } else {
       siteNavbar.classList.add('nav-transparent');
@@ -26,6 +26,7 @@ function doSomething(scroll_pos) {
       decoratorLink.classList.add('link-decorator');
       $('.link-decorator').removeClass('remove-decorator');
       $('.navbar-option-link').removeClass('active-link-scroll');
+      textLink.classList.remove('active-link');
     }
   }
 }
