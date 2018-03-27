@@ -59,6 +59,9 @@
       &:focus
         border-bottom solid 2px $wLightBlue
         transition all 0.3s
+
+    &-mobile
+      display none
     
   &-panel
     align-items flex-end
@@ -137,24 +140,33 @@
   .contact
     &-form
       &-card
-        bottom -115px
+        bottom -10px
         left 30px
         padding 30px
         right 30px
+        margin 50px 30px 0 30px
+        position initial
 
         &-container
           height 500px
 
       &-rows
+        display none
         flex-direction column
 
         &-content
           width 100%
 
-          &:nth-child(1)
-            margin-right 0
+      &-content
+        &:nth-child(3)
+          margin-bottom 25px
+
+      &-mobile
+        display block
 
     &-panel
+      height 490px
+      margin-top -45px
       padding-bottom 50px
 
       &-content
