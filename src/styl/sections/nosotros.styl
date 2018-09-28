@@ -143,8 +143,8 @@
   &-leaders
     display flex
     flex-wrap wrap
+    justify-content center
     margin 0 auto 140px auto
-    max-width 1030px
 
     &-card
       display flex
@@ -152,7 +152,7 @@
       width 306px
 
       &:nth-child(2)
-        margin 0 56px
+        margin 0 0 0 56px
 
     &-photo
       height 202px
@@ -211,7 +211,7 @@
           display none
 
     &-leaders
-      max-width 652px
+      margin 0 30px 140px 30px
 
       &-card:nth-child(2)
         margin 0 0 0 40px
@@ -236,6 +236,7 @@
     &-cards
       &-container
         max-width 480px
+
     &-card
       height 140px
       margin 8px
@@ -313,7 +314,14 @@
 
     &-why
       height 480px
-      padding 50px 52% 0 30px
+      padding 33px 52% 0 30px
+
+      &-title
+        &-container
+          margin-bottom 22px
+
+      &-list
+        line-height 22px
 
       &-img
         height 494px
@@ -321,6 +329,3 @@
 
         &-container
           top -6.5px
-
-  .lala
-    color red
