@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link runat="server" rel="shortcut icon" href="img/favicon/wicore-favicon.png" type="image/x-icon"/>
     <link runat="server" rel="icon" href="img/favicon/wicore-favicon.png" type="image/ico"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ Wicore }}</title>
   </head>
   <body>
@@ -47,5 +48,9 @@
     <script src="js/{{ projectFilesName }}.js"></script>
     {% block js_inline %}
     {% endblock %}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
