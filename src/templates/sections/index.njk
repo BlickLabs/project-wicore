@@ -1,16 +1,22 @@
 {% extends "partials/base.njk" %}
 
-{% block meta %}
-<title>Inicio</title>
-{% endblock %}
+{% block title %}Logística de envíos{% endblock %}
+
+{% set meta_description = "¿Por qué Wicore? Te damos tranquilidad para que puedas enfocarte en hacer crecer tu empresa." %}
+{% set og_url = "http://wicore.mx/" %}
+{% set og_title = "Logística de envíos | Wicore" %}
+{% set og_description = "¿Por qué Wicore? Te damos tranquilidad para que puedas enfocarte en hacer crecer tu empresa." %}
+{% set og_img = "http://wicore.mx/img/seo/seo-home.png" %}
+{% set og_img_width = "1224" %}
+{% set og_img_height = "802" %}
 
 {% block content %}
 <div>
   <div class="home-cover">
     <div class="home-cover-title-container">
-      <h1 class="home-cover-title nunitosans-extrabold">Work on Your Business, Not in Your Business</h1>
+      <h1 class="home-cover-title nunitosans-extrabold">Enfócate en hacer crecer tu negocio. Nosotros nos encargamos de tu logística.</h1>
     </div>
-    <div>
+    <div class="home-cover-btn-container">
       <a href="contactanos.html">
         <button class="wicore-button nunitosans-bold">contactar</button>
       </a>
@@ -21,8 +27,8 @@
     <div class="home-focus">
       <h2 class="home-focus-title nunitosans-extrabold">almacenaje y distribución a nivel nacional:</h2>
       <section class="home-focus-panels">
-        <div class="home-focus-subtitle-container">
-          <span class="home-focus-subtitle nunitosans-bold">Contamos con instalaciones en 13 de las principales ciudades de México</span>
+        <div class="home-focus-subtitle-container" id="home-big-panel">
+          <span class="home-focus-subtitle nunitosans-bold">Capacidad de distribución a nivel nacional con nuestra red logística que abarca 14 de las principales ciudades de México</span>
         </div>
         <div class="home-focus-subtitle-columns" data-aos="zoom-in" data-aos-duration="3000">
           <div class="home-focus-subtitle-container">
@@ -249,7 +255,7 @@
 
   <div class="home-try">
     <div>
-      <h1 class="home-try-title nunitosans-extrabold">Te regalamos 5</h1>
+      <h2 class="home-try-title nunitosans-extrabold">Te regalamos 5</h2>
       <div class="home-try-subtitle-container">
         <span class="home-try-subtitle gandhisans-italic">pedidos para que pruebes la <span class="gandhisans-bolditalic">calidad de nuestro servicio</span></span>
       </div>
@@ -262,7 +268,7 @@
   <div class="home-why">
     <div class="home-why-info">
       <div class="home-why-title-container">
-        <h3 class="home-why-title nunitosans-bold">¿Por qué Wicore?</h3>
+        <h2 class="home-why-title nunitosans-bold">¿Por qué Wicore?</h2>
       </div>
       <span class="home-why-desc nunitosans-regular">Te damos tranquilidad para que puedas enfocarte en hacer crecer tu empresa.</span>
     </div>
