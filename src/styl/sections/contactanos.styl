@@ -11,16 +11,17 @@
   &-form
     &-card
       background-color #fff
-      bottom -100px
       box-shadow 0 12px 29px 0 rgba(0, 0, 0, 0.22)
-      left 108px
+      display flex
+      justify-content center
+      margin 55px auto -100px auto
       padding 25px 123px 30px 123px
-      position absolute
-      right 108px
+      position relative
+      width 85%
 
-      &-container
-        height 219px
-        position relative
+      &-content
+        margin-right -50px
+        width 500px
 
     &-rows
       display flex
@@ -122,37 +123,22 @@
 .align-icons
   align-items center
 
-#wicore-form
-  &-mobile
-    display none
-
-  &-desktop
-    display block
-
 @media screen and (min-width 769px) and (max-width 900px)
   .contact
     &-panel
       &-separator
         margin 0 30px
 
-    &-form
-      &-card
-        left 66px
-        right 66px
-
 @media screen and (max-width 768px)
   .contact
     &-form
       &-card
-        bottom -10px
-        left 30px
-        padding 30px
-        right 30px
-        margin 50px 30px 0 30px
-        position initial
+        padding 30px 0
+        margin-bottom -50px
 
-        &-container
-          height 500px
+        &-content
+          margin-right -25px
+          width 250px
 
       &-rows
         flex-direction column
@@ -166,7 +152,6 @@
 
     &-panel
       height 490px
-      margin-top -45px
       padding-bottom 35px
 
       &-content
@@ -194,10 +179,3 @@
 
           & a:nth-child(1)
             margin-right 19px
-
-  #wicore-form
-    &-mobile
-      display block
-
-    &-desktop
-      display none
