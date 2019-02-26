@@ -1,0 +1,49 @@
+{% extends "partials/base.njk" %}
+
+{% block title %}Probar servicio{% endblock %}
+
+{% block content %}
+
+<style>
+  .try-service-wrapper {
+    margin-top: 150px;
+  }
+
+  .try-service-container {
+    margin-right: -50px;
+  }
+
+  .try-service {
+    margin: 50px auto 110px auto;
+    width: 500px
+  }
+
+  @media screen and (max-width: 540px) {
+    .try-service-container {
+      margin-right: -30px;
+    }
+
+    .try-service {
+      width: 300px;
+    }
+  }
+</style>
+
+<section class="try-service-wrapper">
+  <h1 class="services-title nunitosans-extrabold">Quiero probar el servicio</h1>
+  <section class="try-service-container">
+    <div class="try-service">
+      <!--[if lte IE 8]>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "4317137",
+          formId: "72c6463e-0c0a-4558-a3e8-451d0dcfe68e"
+      });
+      </script>
+    </div>
+  </section>
+</section>
+{% endblock %}
