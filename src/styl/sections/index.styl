@@ -5,9 +5,10 @@
   background-size cover
   display flex
   flex-direction column
-  justify-content center
-  height 528px
-  padding-left 215px
+  justify-content flex-end //center
+  height 570px//528px
+  padding-left 105px
+  padding-bottom 60px
 
   &-title
     color $wWhite
@@ -17,7 +18,13 @@
 
     &-container
       margin-bottom 37px
-      max-width 505px
+      max-width 600px
+
+  &-btn
+    &-container
+      display flex
+      justify-content center
+      padding-right 20%
 
 .home-focusprocess
   background-image url("../img/backgrounds/home-focusprocess.jpg")
@@ -116,7 +123,7 @@
     justify-content center
 
   &-img
-    height auto
+    height 100%//auto
     max-width 686px
     width 85%
 
@@ -391,6 +398,10 @@
     top 0
     width 100%
 
+#home-big-panel
+  padding-left 40px
+  padding-right 40px
+
 @media screen and (max-width 1100px)
   .home-focus
     margin-top 30px
@@ -427,9 +438,24 @@
     &-info
       margin 50px 0 0 0
 
+  .home-benefits
+    align-items center
+    flex-direction column
+
+  #home-big-panel
+    padding-left 30px
+    padding-right 30px
+
+    span
+      font-size 14px
+
 @media screen and (min-width 951px)
   .home-video
     margin 0 14%
+
+@media screen and (max-width 950px) and (min-width 787px)
+  .home-video
+    margin 0 10%
 
 @media screen and (max-width 786px)
   .home-cover
@@ -441,6 +467,10 @@
     &-title
       font-size $wFontGiantM
       line-height 30px
+
+    &-btn
+      &-container
+        padding-right 40px
 
   .home-focus
     &-title
@@ -594,6 +624,13 @@
       margin-left 34px
       max-width 190px
 
+  #home-big-panel
+    padding-left 20px
+    padding-right 20px
+
+    span
+      font-size 12px
+
 @media screen and (min-width 506px) and (max-width 862px)
   .home-cover
     background-position right
@@ -620,3 +657,11 @@
         .home-focus-subtitle-container:nth-child(1) .home-focus-subtitle:before,
         .home-focus-subtitle-container:nth-child(2) .home-focus-subtitle:before
           margin-left -10px
+
+  #home-big-panel
+    height 90px
+    padding-left 15px
+    padding-right 15px
+
+    span
+      font-size 12px
