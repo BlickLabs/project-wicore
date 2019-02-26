@@ -1,8 +1,14 @@
 {% extends "partials/base.njk" %}
 
-{% block meta %}
-<title>Servicios</title>
-{% endblock %}
+{% block title %}Servicios{% endblock %}
+
+{% set meta_description = "Si pasa por tu mente, nosotros lo hacemos." %}
+{% set og_url = "http://wicore.mx/servicios.html" %}
+{% set og_title = "Servicios | Wicore" %}
+{% set og_description = "Si pasa por tu mente, nosotros lo hacemos." %}
+{% set og_img = "http://wicore.mx/img/seo/seo-servicios.png" %}
+{% set og_img_width = "1642" %}
+{% set og_img_height = "936" %}
 
 {% block content %}
 <div class="services">
@@ -17,7 +23,7 @@
           <img class="services-block-icon-logistic" src="img/icons/icon-logistic-white.png" alt="Ícono de una caja en color blanco">
         </div>
         <div class="services-block-title-container">
-          <h3 class="services-block-title nunitosans-regular">Logística de envíos</h3>
+          <h2 class="services-block-title nunitosans-regular">Logística de envíos</h2>
         </div>
       </div>
     </a>
@@ -27,7 +33,7 @@
           <img class="services-block-icon-operations" src="img/icons/icon-operations-white.png" alt="Ícono de un engrane en color blanco">
         </div>
         <div class="services-block-title-container">
-          <h3 class="services-block-title nunitosans-regular">Director de Operaciones<br>Compartido</h3>
+          <h2 class="services-block-title nunitosans-regular">Director de Operaciones<br>Compartido</h2>
         </div>
       </div>
     </a>
@@ -37,7 +43,7 @@
           <img class="services-block-icon-consultancy" src="img/icons/icon-consultancy-white.png" alt="Ícono de una persona hablando en color blanco">
         </div>
         <div class="services-block-title-container">
-          <h3 class="services-block-title nunitosans-regular">Consultoría</h3>
+          <h2 class="services-block-title nunitosans-regular">Consultoría</h2>
         </div>
       </div>
     </a>
@@ -59,7 +65,7 @@
               Entendemos que estás <b>concentrado</b> en los <b>retos</b> de tener tu negocio, <b>déjanos tu operación</b> a nosotros mientras <b>tú te enfocas</b> en hacerlo <b>crecer</b>.
             </p>
             <p class="services-logistic-paragraph">
-              <b>Llevamos</b> la <b>operación</b> de punta a punta. No importa la complejidad de tu cliente, nosotros asegramos su completa satisfacción. La <b>excelencia operativa</b> es la clave, por eso WiCore es el mejor aliado para <b>tercerizar</b> tu operación.
+              <b>Llevamos</b> la <b>operación</b> de punta a punta. No importa la complejidad de tu cliente, nosotros aseguramos su completa satisfacción. La <b>excelencia operativa</b> es la clave, por eso WiCore es el mejor aliado para <b>tercerizar</b> tu operación.
             </p>
             <p>
               Un servicio al cliente de <b>clase mundial</b> es lo que esperas y es lo que te entregamos.
@@ -70,6 +76,11 @@
     </div>
     <div class="services-logistic-infographi-container">
       <img class="services-logistic-infographi" src="img/services/services-logistic-infographi.jpg" alt="Infografía con el proceso de envío">
+    </div>
+    <div class="services-success-button-container" id="service-btn-container-one">
+      <a href="contactanos.html">
+        <button class="wicore-button nunitosans-bold">Contactar</button>
+      </a>
     </div>
   </div>
 
@@ -153,6 +164,11 @@
   <div class="services-banner">
     <p class="services-banner-title gandhisans-italic">Si pasa por tu mente, <span class="gandhisans-bolditalic">nosotros lo hacemos</span></p>
   </div>
+  <div class="services-success-button-container" id="service-btn-container-two">
+    <a href="contactanos.html">
+      <button class="wicore-button nunitosans-bold">Contactar</button>
+    </a>
+  </div>
 
   <div class="services-consultancy-container services-consultancy" id="to-consultancy">
     <div class="services-consultancy-img-container">
@@ -220,6 +236,11 @@
   </div>
   <div class="services-expertise-infographi-mobile">
     <img src="img/services/services-infographi-mobile.jpg" alt="Infografía con las Áreas de Expertise en versión móvil">
+  </div>
+  <div class="services-success-button-container" id="service-btn-container-three">
+    <a href="contactanos.html">
+      <button class="wicore-button nunitosans-bold">Contactar</button>
+    </a>
   </div>
 
   <div class="services-success nunitosans-extrabold">
@@ -317,7 +338,7 @@
     </div>
     <div class="services-success-button-container">
       <a href="contactanos.html">
-        <button class="wicore-button nunitosans-bold">Contáctanos</button>
+        <button class="wicore-button nunitosans-bold">Contactar</button>
       </a>
     </div>
   </div>
