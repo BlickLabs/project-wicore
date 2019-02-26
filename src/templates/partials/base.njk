@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-MX">
   <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MWDJLTP');</script>
-    <!-- End Google Tag Manager -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="og:url" content="http://wicore.mx/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Wicore | Logística" />
-    <meta property="og:description" content="Enfócate en hacer crecer tu negocio mientras nosotros nos encargamos de la operación." />
-    <meta property="og:image" content="http://wicore.mx/img/services/services-logistic.jpg" />
-    <meta property="og:image:width" content="1191" />
-    <meta property="og:image:height" content="1431" />
-    <meta name="keywords" content="Almacenaje, generación de pedido, Director de operaciones compartido, Logística, Consultoría, Surtido, Operación, Gestión">
-    <meta name="description" content="Enfócate en hacer crecer tu negocio mientras nosotros nos encargamos de la operación." />
+
+    {% include 'partials/metatags.njk' %}
+
     {% block meta %}{% endblock %}
+
     {% block extra_css %}{% endblock %}
+
     <link rel="stylesheet" href="css/{{ projectFilesName }}.libs.css">
     <link rel="stylesheet" href="css/main.css">
     <link runat="server" rel="shortcut icon" href="img/favicon/wicore-favicon.png" type="image/x-icon"/>
     <link runat="server" rel="icon" href="img/favicon/wicore-favicon.png" type="image/ico"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ Wicore }}</title>
+    <link rel="canonical" href="http://wicore.mx/" />
+    <title>{% block title %}{% endblock %} | Wicore</title>
+
+    {% include 'partials/googleTagManagerScript.njk' %}
+
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWDJLTP"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
     <div id="page">
       {% include 'partials/navbar.njk' %}
       <main>
@@ -52,5 +40,10 @@
     <script>
       AOS.init();
     </script>
+
+    {% include 'partials/googleTagManagerNoScript.njk' %}
+
+    {% include 'partials/hubspotEmbedCode.njk' %}
+
   </body>
 </html>
