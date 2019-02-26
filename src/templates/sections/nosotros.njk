@@ -1,8 +1,14 @@
 {% extends "partials/base.njk" %}
 
-{% block meta %}
-<title>Nosotros</title>
-{% endblock %}
+{% block title %}Nosotros{% endblock %}
+
+{% set meta_description = "Vivimos comprometidos con nuestros clientes y por sus clientes. Cuidando cada pequeño detalle y cumpliendo las más altas exigencias del mercado." %}
+{% set og_url = "http://wicore.mx/nosotros.html" %}
+{% set og_title = "Nosotros | Wicore" %}
+{% set og_description = "Vivimos comprometidos con nuestros clientes y por sus clientes. Cuidando cada pequeño detalle y cumpliendo las más altas exigencias del mercado." %}
+{% set og_img = "http://wicore.mx/img/seo/seo-nosotros.png" %}
+{% set og_img_width = "1386" %}
+{% set og_img_height = "862" %}
 
 {% block content %}
 <div class="aboutus">
@@ -47,7 +53,7 @@
 
   <div class="aboutus-why">
     <div class="aboutus-why-title-container">
-      <h1 class="aboutus-why-title nunitosans-bold">¿Quién es Wicore?</h1>
+      <h2 class="aboutus-why-title nunitosans-bold">¿Quién es Wicore?</h2>
     </div>
     <ul class="aboutus-why-list nunitosans-regular">
       <div class="aboutus-why-list-container">
@@ -79,7 +85,7 @@
       </div>
       <div>
         <div class="aboutus-leaders-title-container">
-          <h2 class="aboutus-leaders-title nunitosans-extrabold">Josu Gurtubay</h2>
+          <h3 class="aboutus-leaders-title nunitosans-extrabold">Josu Gurtubay</h3>
         </div>
         <div class="aboutus-leaders-paragraph-container">
           <p class="aboutus-leaders-paragraph nunitosans-regular">
@@ -99,7 +105,7 @@
       </div>
       <div>
         <div class="aboutus-leaders-title-container">
-          <h2 class="aboutus-leaders-title nunitosans-extrabold">Pablo Dallafontana</h2>
+          <h3 class="aboutus-leaders-title nunitosans-extrabold">Pablo Dallafontana</h3>
         </div>
         <div class="aboutus-leaders-paragraph-container">
             <p class="aboutus-leaders-paragraph nunitosans-regular">
