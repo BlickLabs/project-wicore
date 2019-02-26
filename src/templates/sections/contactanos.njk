@@ -1,8 +1,14 @@
 {% extends "partials/base.njk" %}
 
-{% block meta %}
-<title>Contáctanos</title>
-{% endblock %}
+{% block title %}Contáctanos{% endblock %}
+
+{% set meta_description = "Dejanos tus datos y con gusto nos pondremos en contacto para ayudarte." %}
+{% set og_url = "http://wicore.mx/contactanos.html" %}
+{% set og_title = "Contáctanos | Wicore" %}
+{% set og_description = "Dejanos tus datos y con gusto nos pondremos en contacto para ayudarte." %}
+{% set og_img = "http://wicore.mx/img/seo/seo-contacto.png" %}
+{% set og_img_width = "1408" %}
+{% set og_img_height = "828" %}
 
 {% block content %}
 <div class="contact">
