@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: http://sandbox.wicore.getmore.mx/
+Sitemap: http://wicore.mx/sitemap.xml

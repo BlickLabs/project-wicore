@@ -1,8 +1,14 @@
 {% extends "partials/base.njk" %}
 
-{% block meta %}
-<title>Nosotros</title>
-{% endblock %}
+{% block title %}Nosotros{% endblock %}
+
+{% set meta_description = "Vivimos comprometidos con nuestros clientes y por sus clientes. Cuidando cada pequeño detalle y cumpliendo las más altas exigencias del mercado." %}
+{% set og_url = "http://wicore.mx/nosotros.html" %}
+{% set og_title = "Nosotros | Wicore" %}
+{% set og_description = "Vivimos comprometidos con nuestros clientes y por sus clientes. Cuidando cada pequeño detalle y cumpliendo las más altas exigencias del mercado." %}
+{% set og_img = "http://wicore.mx/img/seo/seo-nosotros.png" %}
+{% set og_img_width = "1386" %}
+{% set og_img_height = "862" %}
 
 {% block content %}
 <div class="aboutus">
@@ -15,31 +21,31 @@
   <div class="aboutus-cards-container nunitosans-bold">
     <div class="aboutus-card">
       <div class="aboutus-icon-container">
-        <img class="aboutus-icon-shipments" src="img/icons/icon-shipments-blue.png">
+        <img class="aboutus-icon-shipments" src="img/icons/icon-shipments-blue.png" alt="Ícono de una camioneta de carga en color azul">
       </div>
       <span class="aboutus-card-title">Más de<br>15, 000 Envíos</span>
     </div>
     <div class="aboutus-card">
       <div class="aboutus-icon-container">
-        <img class="aboutus-icon-like" src="img/icons/icon-like-blue.png">
+        <img class="aboutus-icon-like" src="img/icons/icon-like-blue.png" alt="Ícono de un pulgar arriba en color azul">
       </div>
       <span class="aboutus-card-title">Más de 12, 000<br>clientes felices</span>
     </div>
     <div class="aboutus-card">
       <div class="aboutus-icon-container">
-        <img class="aboutus-icon-saving" src="img/icons/icon-saving-blue.png">
+        <img class="aboutus-icon-saving" src="img/icons/icon-saving-blue.png" alt="Ícono de un billete en color azul">
       </div>
       <span class="aboutus-card-title">30% de Ahorro sobre<br>gasto de transporte</span>
     </div>
     <div class="aboutus-card">
       <div class="aboutus-icon-container">
-        <img class="aboutus-icon-increase" src="img/icons/icon-increase-blue.png">
+        <img class="aboutus-icon-increase" src="img/icons/icon-increase-blue.png" alt="Ícono de una bolsa en color azul">
       </div>
       <span class="aboutus-card-title">90% de incremento<br>en ventas de nuestros<br>clientes</span>
     </div>
     <div class="aboutus-card">
       <div class="aboutus-icon-container">
-        <img class="aboutus-icon-time" src="img/icons/icon-time-blue.png">
+        <img class="aboutus-icon-time" src="img/icons/icon-time-blue.png" alt="Ícono de un reloj en color azul">
       </div>
       <span class="aboutus-card-title">80% Tiempo liberado<br>de la operación a directores</span>
     </div>
@@ -47,7 +53,7 @@
 
   <div class="aboutus-why">
     <div class="aboutus-why-title-container">
-      <h1 class="aboutus-why-title nunitosans-bold">¿Quién es Wicore?</h1>
+      <h2 class="aboutus-why-title nunitosans-bold">¿Quién es Wicore?</h2>
     </div>
     <ul class="aboutus-why-list nunitosans-regular">
       <div class="aboutus-why-list-container">
@@ -64,7 +70,7 @@
       </div>
     </ul>
     <div class="aboutus-why-img-container">
-      <img class="aboutus-why-img" src="img/about-us/about-us-why.png">
+      <img class="aboutus-why-img" src="img/about-us/about-us-why.png" alt="Imagen de un hombre con una caja para la sección ¿Qué es Wicore?">
     </div>
   </div>
 
@@ -75,11 +81,11 @@
   <div class="aboutus-leaders">
     <div class="aboutus-leaders-card">
       <div class="aboutus-leaders-photo-container">
-        <img class="aboutus-leaders-photo" src="img/about-us/about-us-josu.png">
+        <img class="aboutus-leaders-photo" src="img/about-us/about-us-josu.png" alt="Foto de Josu Gurtubay">
       </div>
       <div>
         <div class="aboutus-leaders-title-container">
-          <h2 class="aboutus-leaders-title nunitosans-extrabold">Josu Gurtubay</h2>
+          <h3 class="aboutus-leaders-title nunitosans-extrabold">Josu Gurtubay</h3>
         </div>
         <div class="aboutus-leaders-paragraph-container">
           <p class="aboutus-leaders-paragraph nunitosans-regular">
@@ -89,17 +95,17 @@
       </div>
       <div class="aboutus-leaders-in-container">
         <a href="https://www.linkedin.com/in/gurtubay/" target="_blank">
-          <img class="aboutus-leaders-in" src="img/icons/in-icon.png">
+          <img class="aboutus-leaders-in" src="img/icons/in-icon.png" alt="Ícono de Linked In">
         </a>
       </div>
     </div>
     <div class="aboutus-leaders-card">
       <div class="aboutus-leaders-photo-container">
-        <img class="aboutus-leaders-photo" src="img/about-us/about-us-pablo.png">
+        <img class="aboutus-leaders-photo" src="img/about-us/about-us-pablo.png" alt="Foto de Pablo Dallafontana">
       </div>
       <div>
         <div class="aboutus-leaders-title-container">
-          <h2 class="aboutus-leaders-title nunitosans-extrabold">Pablo Dallafontana</h2>
+          <h3 class="aboutus-leaders-title nunitosans-extrabold">Pablo Dallafontana</h3>
         </div>
         <div class="aboutus-leaders-paragraph-container">
             <p class="aboutus-leaders-paragraph nunitosans-regular">
@@ -109,7 +115,7 @@
       </div>
       <div class="aboutus-leaders-in-container">
         <a href="https://www.linkedin.com/in/pablo-dallafontana-62b06842/" target="_blank">
-          <img class="aboutus-leaders-in" src="img/icons/in-icon.png">
+          <img class="aboutus-leaders-in" src="img/icons/in-icon.png" alt="Ícono de Linked In">
         </a>
       </div>
     </div>

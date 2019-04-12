@@ -1,37 +1,34 @@
 {% extends "partials/base.njk" %}
 
-{% block meta %}
-<title>Inicio</title>
-{% endblock %}
+{% block title %}Logística de envíos{% endblock %}
+
+{% set meta_description = "¿Por qué Wicore? Te damos tranquilidad para que puedas enfocarte en hacer crecer tu empresa." %}
+{% set og_url = "http://wicore.mx/" %}
+{% set og_title = "Logística de envíos | Wicore" %}
+{% set og_description = "¿Por qué Wicore? Te damos tranquilidad para que puedas enfocarte en hacer crecer tu empresa." %}
+{% set og_img = "http://wicore.mx/img/seo/seo-home.png" %}
+{% set og_img_width = "1224" %}
+{% set og_img_height = "802" %}
 
 {% block content %}
 <div>
   <div class="home-cover">
     <div class="home-cover-title-container">
-      <h1 class="home-cover-title nunitosans-extrabold">Work on Your Business, Not in Your Business</h1>
+      <h1 class="home-cover-title nunitosans-extrabold">Enfócate en hacer crecer tu negocio. Nosotros nos encargamos de tu logística.</h1>
     </div>
-    <div>
-      <a href="servicios.html">
-        <button class="wicore-button nunitosans-bold">conoce más</button>
+    <div class="home-cover-btn-container">
+      <a href="contactanos.html">
+        <button class="wicore-button nunitosans-bold">contactar</button>
       </a>
       </div>
   </div>
 
   <div class="home-focusprocess">
-    <!-- <div class="home-focus">
-      <div class="home-focus-title-container">
-        <h2 class="home-focus-title nunitosans-extrabold">Enfócate en hacer <span class="home-focus-special">crecer tu negocio</span> mientras nosotros nos encargamos de la operación</h2>
-      </div>
-      <div class="home-focus-separator-container">
-        <div class="home-focus-separator"></div>
-      </div>
-    </div> -->
-
     <div class="home-focus">
       <h2 class="home-focus-title nunitosans-extrabold">almacenaje y distribución a nivel nacional:</h2>
       <section class="home-focus-panels">
-        <div class="home-focus-subtitle-container">
-          <span class="home-focus-subtitle nunitosans-bold">Contamos con instalaciones en 13 de las principales ciudades de México</span>
+        <div class="home-focus-subtitle-container" id="home-big-panel">
+          <span class="home-focus-subtitle nunitosans-bold">Capacidad de distribución a nivel nacional con nuestra red logística que abarca 14 de las principales ciudades de México</span>
         </div>
         <div class="home-focus-subtitle-columns" data-aos="zoom-in" data-aos-duration="3000">
           <div class="home-focus-subtitle-container">
@@ -44,7 +41,7 @@
       </section>
 
       <section class="home-focus-map">
-        <img class="home-focus-img" src="/img/home/inicio-mapa.png">
+        <img class="home-focus-img" src="/img/home/inicio-mapa.png" alt="Mapa de la República Mexicana con las instalaciones de Wicore">
         <div class="home-focus-info">
           <ul class="nunitosans-regular">
             <div>
@@ -59,14 +56,18 @@
             <div>
               <li><b>8.</b> san luis potosí</li>
               <li><b>9.</b> querétaro</li>
-              <li><b>10.</b> cdmx</li>
-              <li><b>11.</b> puebla</li>
-              <li><b>12.</b> villahermosa</li>
-              <li><b>13.</b> mérida</li>
+              <li><b>10.</b> Estado de México</li>
+              <li><b>11.</b> cdmx</li>
+              <li><b>12.</b> puebla</li>
+              <li><b>13.</b> villahermosa</li>
+              <li><b>14.</b> mérida</li>
             </div>
           </ul>
         </div>
       </section>
+      <a href="contactanos.html">
+        <button class="wicore-button nunitosans-bold">Contactar</button>
+      </a>
     </div>
 
     <div class="home-ourprocess">
@@ -76,34 +77,34 @@
         </div>
         <div class="home-ourprocess-cards-container nunitosans-bold">
           <div class="home-ourprocess-card-container">
-            <img class="home-ourprocess-card" src="img/home/we-pack.png">
+            <img class="home-ourprocess-card" src="img/home/we-pack.png" alt="Imagen representativa del proceso Almacenamos tu inventario">
             <div class="home-ourprocess-desc-container">
               <span class="home-ourprocess-desc">Almacenamos tu inventario</span>
             </div>
           </div>
           <div class="home-ourprocess-arrow-container">
-            <img class="home-ourprocess-arrow" src="img/icons/arrow-icon.png">
+            <img class="home-ourprocess-arrow" src="img/icons/arrow-icon.png" alt="Ícono de un semi triángulo">
           </div>
           <div class="home-ourprocess-card-container">
-            <img class="home-ourprocess-card" src="img/home/to-stock.png">
+            <img class="home-ourprocess-card" src="img/home/to-stock.png" alt="Imagen representativa del proceso Recibimos las órdenes de compra de tus clientes">
             <div class="home-ourprocess-desc-container">
               <span class="home-ourprocess-desc small-desc">Recibimos las órdenes de compra de tus clientes</span>
             </div>
           </div>
           <div class="home-ourprocess-arrow-container">
-            <img class="home-ourprocess-arrow" src="img/icons/arrow-icon.png">
+            <img class="home-ourprocess-arrow" src="img/icons/arrow-icon.png" alt="Ícono de un semi triángulo">
           </div>
           <div class="home-ourprocess-card-container">
-            <img class="home-ourprocess-card" src="img/home/we-received.png">
+            <img class="home-ourprocess-card" src="img/home/we-received.png" alt="Imagen representativa del proceso Empacamos y gestionamos el envío">
             <div class="home-ourprocess-desc-container">
               <span class="home-ourprocess-desc">Empacamos y gestionamos el envío</span>
             </div>
           </div>
           <div class="home-ourprocess-arrow-container">
-            <img class="home-ourprocess-arrow" src="img/icons/arrow-icon.png">
+            <img class="home-ourprocess-arrow" src="img/icons/arrow-icon.png" alt="Ícono de un semi triángulo">
           </div>
           <div class="home-ourprocess-card-container">
-            <img class="home-ourprocess-card" src="img/home/we-deliver.png">
+            <img class="home-ourprocess-card" src="img/home/we-deliver.png" alt="Imagen representativa del proceso Entregamos tus productos">
             <div class="home-ourprocess-desc-container">
               <span class="home-ourprocess-desc">Entregamos tus productos</span>
             </div>
@@ -111,7 +112,7 @@
         </div>
         <div class="home-ourprocess-button-container">
           <a href="contactanos.html">
-            <button class="wicore-button nunitosans-bold">Contáctanos</button>
+            <button class="wicore-button nunitosans-bold">Contactar</button>
           </a>
         </div>
       </div>
@@ -119,8 +120,8 @@
   </div>
 
   <div class="home-separator">
-    <img class="home-separator-desktop" src="img/home/call-center.jpg">
-    <img class="home-separator-mobile" src="img/home/call-center-mobile.jpg">
+    <img class="home-separator-desktop" src="img/home/call-center.jpg" alt="Versión desktop del separador Call Center">
+    <img class="home-separator-mobile" src="img/home/call-center-mobile.jpg" alt="Versión móvil del separador Call Center">
   </div>
 
   <div class="home-benefits">
@@ -128,13 +129,13 @@
       <div class="home-benefits-title-container">
         <h2 class="home-benefits-title">Beneficios</h2>
       </div>
-      <img class="home-benefits-img" src="img/home/benefits.png">
+      <img class="home-benefits-img" src="img/home/benefits.png" alt="Imagen representativa de Beneficios">
     </div>
     <div class="home-benefits-info-columns nunitosans-bold">
       <div class="home-benefits-info">
         <div class="home-benefits-info-content">
           <div>
-            <img class="home-benefits-icon-one icon-purse" src="img/icons/purse-icon.png">
+            <img class="home-benefits-icon-one icon-purse" src="img/icons/purse-icon.png" alt="Ícono para el beneficio Solo pagas cuando vendes">
           </div>
           <div class="home-benefits-info-section">
             <h3 class="home-benefits-info-title">Solo pagas cuando vendes</h3>
@@ -143,7 +144,7 @@
         </div>
         <div class="home-benefits-info-content">
           <div>
-            <img class="home-benefits-icon-one icon-like" src="img/icons/like-icon.png">
+            <img class="home-benefits-icon-one icon-like" src="img/icons/like-icon.png" alt="Ícono para el beneficio El mejor servicio para tu cliente">
           </div>
           <div class="home-benefits-info-section">
             <h3 class="home-benefits-info-title">El mejor servicio para tu cliente</h3>
@@ -152,7 +153,7 @@
         </div>
         <div class="home-benefits-info-content">
           <div>
-            <img class="home-benefits-icon-one icon-scalable" src="img/icons/scalable-icon.png">
+            <img class="home-benefits-icon-one icon-scalable" src="img/icons/scalable-icon.png" alt="Ícono para el beneficio Escalabilidad">
           </div>
           <div class="home-benefits-info-section">
             <h3 class="home-benefits-info-title">Escalabilidad</h3>
@@ -164,7 +165,7 @@
       <div class="home-benefits-info">
         <div class="home-benefits-info-content">
           <div>
-            <img class="home-benefits-icon-one icon-money" src="img/icons/money-icon.png">
+            <img class="home-benefits-icon-one icon-money" src="img/icons/money-icon.png" alt="Ícono para el beneficio No necesitas inversión">
           </div>
           <div class="home-benefits-info-section">
             <h3 class="home-benefits-info-title">No necesitas inversión</h3>
@@ -173,7 +174,7 @@
         </div>
         <div class="home-benefits-info-content">
           <div>
-            <img class="home-benefits-icon-one icon-company" src="img/icons/company-icon.png">
+            <img class="home-benefits-icon-one icon-company" src="img/icons/company-icon.png" alt="Ícono para el beneficio No importa el tamaño de tu empresa">
           </div>
           <div class="home-benefits-info-section">
             <h3 class="home-benefits-info-title">No importa el tamaño de tu empresa</h3>
@@ -181,8 +182,8 @@
           </div>
         </div>
         <div>
-          <a href="servicios.html">
-            <button class="wicore-button nunitosans-bold">Servicios</button>
+          <a href="contactanos.html">
+            <button class="wicore-button nunitosans-bold">Contactar</button>
           </a>
         </div>
       </div>
@@ -195,12 +196,12 @@
       <div class="home-benefits-title-container">
         <h2 class="home-benefits-title">Beneficios</h2>
       </div>
-      <img class="home-benefits-img" src="img/home/benefits.png">
+      <img class="home-benefits-img" src="img/home/benefits.png" alt="Imagen representativa de Beneficios">
     </div>
     <div class="benefits-carousel owl-carousel nunitosans-bold">
       <div class="home-benefits-info-content">
         <div>
-          <img class="home-benefits-icon-one icon-purse" src="img/icons/purse-icon.png">
+          <img class="home-benefits-icon-one icon-purse" src="img/icons/purse-icon.png" alt="Ícono para el beneficio Solo pagas cuando vendes">
         </div>
         <div class="home-benefits-info-section">
           <h3 class="home-benefits-info-title">Solo pagas cuando vendes</h3>
@@ -209,7 +210,7 @@
       </div>
       <div class="home-benefits-info-content">
         <div>
-          <img class="home-benefits-icon-one icon-like" src="img/icons/like-icon.png">
+          <img class="home-benefits-icon-one icon-like" src="img/icons/like-icon.png" alt="Ícono para el beneficio El mejor servicio para tu cliente">
         </div>
         <div class="home-benefits-info-section">
           <h3 class="home-benefits-info-title">El mejor servicio para tu cliente</h3>
@@ -218,7 +219,7 @@
       </div>
       <div class="home-benefits-info-content">
         <div>
-          <img class="home-benefits-icon-one icon-scalable" src="img/icons/scalable-icon.png">
+          <img class="home-benefits-icon-one icon-scalable" src="img/icons/scalable-icon.png" alt="Ícono para el beneficio Escalabilidad">
         </div>
         <div class="home-benefits-info-section">
           <h3 class="home-benefits-info-title">Escalabilidad</h3>
@@ -227,7 +228,7 @@
       </div>
       <div class="home-benefits-info-content">
         <div>
-          <img class="home-benefits-icon-one icon-money" src="img/icons/money-icon.png">
+          <img class="home-benefits-icon-one icon-money" src="img/icons/money-icon.png" alt="Ícono para el beneficio No necesitas inversión">
         </div>
         <div class="home-benefits-info-section">
           <h3 class="home-benefits-info-title">No necesitas inversión</h3>
@@ -236,7 +237,7 @@
       </div>
       <div class="home-benefits-info-content">
         <div>
-          <img class="home-benefits-icon-one icon-company" src="img/icons/company-icon.png">
+          <img class="home-benefits-icon-one icon-company" src="img/icons/company-icon.png" alt="Ícono para el beneficio No importa el tamaño de tu empresa">
         </div>
         <div class="home-benefits-info-section">
           <h3 class="home-benefits-info-title">No importa el tamaño de tu empresa</h3>
@@ -245,8 +246,8 @@
       </div>
     </div>
     <div class="home-benefits-btn-container">
-      <a href="servicios.html">
-        <button class="wicore-button nunitosans-bold">Servicios</button>
+      <a href="contactanos.html">
+        <button class="wicore-button nunitosans-bold">Contactar</button>
       </a>
     </div>
   </div>
@@ -254,12 +255,12 @@
 
   <div class="home-try">
     <div>
-      <h1 class="home-try-title nunitosans-extrabold">Te regalamos 5</h1>
+      <h2 class="home-try-title nunitosans-extrabold">Te regalamos 5</h2>
       <div class="home-try-subtitle-container">
         <span class="home-try-subtitle gandhisans-italic">pedidos para que pruebes la <span class="gandhisans-bolditalic">calidad de nuestro servicio</span></span>
       </div>
     </div>
-    <a href="contactanos.html">
+    <a href="probar-servicio.html">
       <button class="wicore-button nunitosans-bold">Quiero probar el servicio</button>
     </a>
   </div>
@@ -267,7 +268,7 @@
   <div class="home-why">
     <div class="home-why-info">
       <div class="home-why-title-container">
-        <h3 class="home-why-title nunitosans-bold">¿Por qué Wicore?</h3>
+        <h2 class="home-why-title nunitosans-bold">¿Por qué Wicore?</h2>
       </div>
       <span class="home-why-desc nunitosans-regular">Te damos tranquilidad para que puedas enfocarte en hacer crecer tu empresa.</span>
     </div>
