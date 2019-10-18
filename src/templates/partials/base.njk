@@ -21,7 +21,7 @@
     {% include 'partials/hotjarTracking.njk' %}
 
   </head>
-  <body>
+  <body class="{% if section == 'ful' %}ful--view{% endif %}">
 
     <div id="page">
       {% include 'partials/navbar.njk' %}
