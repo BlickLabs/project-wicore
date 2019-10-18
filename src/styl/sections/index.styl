@@ -5,9 +5,10 @@
   background-size cover
   display flex
   flex-direction column
-  justify-content center
-  height 528px
-  padding-left 215px
+  justify-content flex-end //center
+  height 570px//528px
+  padding-left 105px
+  padding-bottom 60px
 
   &-title
     color $wWhite
@@ -17,7 +18,13 @@
 
     &-container
       margin-bottom 37px
-      max-width 505px
+      max-width 600px
+
+  &-btn
+    &-container
+      display flex
+      justify-content center
+      padding-right 20%
 
 .home-focusprocess
   background-image url("../img/backgrounds/home-focusprocess.jpg")
@@ -30,14 +37,121 @@
   margin 0 0 95px 0
 
   &-title
-    color $wStrongBlue
+    color $wStrongBlack
     font-size $wFontH2
-    letter-spacing 0.4px
-    line-height 46px
+    letter-spacing 4.7px
+    line-height 37px
+    text-align center
+    text-transform uppercase
+    -webkit-font-smoothing antialiased
 
     &-container
       max-width 548px
       margin-left 215px
+
+  &-panels
+    margin 36px auto 70px auto
+    width 1025px
+
+    & > .home-focus-subtitle-container
+      height 72.6px
+      margin-left 33px
+      justify-content center
+
+  &-subtitle
+    align-items center
+    color $wWhite
+    display flex
+    font-size 20px
+    letter-spacing 0.5px
+    line-height 26px
+    transform skew(20deg)
+    -webkit-font-smoothing antialiased
+
+    &-columns
+      display flex
+      flex-direction row
+      margin-top 19px
+      padding-right 33px
+
+      .home-focus-subtitle-container
+        &:nth-child(1),
+        &:nth-child(2)
+          height 72.6px
+
+        &:nth-child(1)
+          margin-right 30px
+          padding 0 48px
+          width 514px
+
+        &:nth-child(2)
+          padding 0 18px
+          width 484px
+
+        .home-focus-subtitle:before
+          content ""
+          background-position center
+          background-repeat no-repeat
+          background-size contain
+
+      .home-focus-subtitle-container:nth-child(1)
+        .home-focus-subtitle:before
+          background-image url("../img/icons/icono-almacenaje.png")
+          height 45px
+          padding-right 50px
+          width 39px
+
+      .home-focus-subtitle-container:nth-child(2)
+        .home-focus-subtitle:before
+          background-image url("../img/icons/icono-distribucion.png")
+          height 44px
+          padding-right 65px
+          width 62px
+
+    &-container
+      align-items center
+      background-image linear-gradient(to left, #3483c0, #286ba2)
+      display flex
+      flex-direction row
+      position relative
+      padding 18px 0
+      transform: skew(-20deg)
+
+  &-map
+    display flex
+    flex-direction row
+    justify-content center
+
+  &-img
+    height 100%//auto
+    max-width 686px
+    width 85%
+
+  &-info
+    margin-left -65px
+
+    & ul
+      border-bottom solid 2px $wLightBlue
+      border-top solid 2px $wLightBlue
+      display flex
+      flex-wrap wrap
+      list-style none
+      margin 0
+      padding 10px
+      width 386px
+
+      & div
+        width 50%
+
+      & li
+        color $wLightBlack
+        font-size $wFontH4
+        letter-spacing 1.2px
+        line-height 24px
+        text-transform uppercase
+
+        & b
+          color $wLightBlue
 
   &-special
     color $wLightBlue
@@ -50,7 +164,13 @@
     &-container
       margin 60px 113px 0 113px
 
+  & a
+    display flex
+    justify-content center
+    margin-top 80px
+
 .home-ourprocess
+  background-color #fff
   box-shadow 0 20px 34px 0 rgba(0, 0, 0, 0.22)
   margin 0 auto
   max-width 1064px
@@ -247,7 +367,7 @@
   height 433px
 
   &-info
-    margin-left 100px
+    margin-left 10%
     max-width 260px
     padding 105px 0 0 0
 
@@ -262,6 +382,15 @@
     font-size $wFontH3
     letter-spacing 0.5px
     line-height 25px
+
+.homewhyBtnContainer
+  text-align center
+
+  @media screen and (min-width 1200px)
+    margin-top 60px
+
+  @media screen and (max-width 786px)
+    margin-bottom 80px
 
 .home-video
   height 0
@@ -278,6 +407,65 @@
     top 0
     width 100%
 
+#home-big-panel
+  padding-left 40px
+  padding-right 40px
+
+@media screen and (max-width 1100px)
+  .home-focus
+    margin-top 30px
+
+    &-title
+      margin 0 auto
+      width 550px
+
+    &-panels
+      max-width 514px
+      width 80%
+
+      & > .home-focus-subtitle-container
+        margin-left 0
+        padding 18px 25px
+        text-align center
+
+    &-subtitle
+      &-columns
+        flex-direction column
+        padding-right 0
+
+        & .home-focus-subtitle-container:nth-child(1)
+          margin 0 0 19px 0
+
+        & .home-focus-subtitle-container:nth-child(1),
+        & .home-focus-subtitle-container:nth-child(2)
+          width 100%
+
+    &-map
+      align-items center
+      flex-direction column
+
+    &-info
+      margin 50px 0 0 0
+
+  .home-benefits
+    align-items center
+    flex-direction column
+
+  #home-big-panel
+    padding-left 30px
+    padding-right 30px
+
+    span
+      font-size 14px
+
+@media screen and (min-width 951px)
+  .home-video
+    margin 0 14%
+
+@media screen and (max-width 950px) and (min-width 787px)
+  .home-video
+    margin 0 10%
+
 @media screen and (max-width 786px)
   .home-cover
     background-position -583px
@@ -288,6 +476,32 @@
     &-title
       font-size $wFontGiantM
       line-height 30px
+
+    &-btn
+      &-container
+        padding-right 40px
+
+  .home-focus
+    &-title
+      width 260px
+
+    &-subtitle
+      font-size 14px
+      line-height 19px
+
+      &-columns
+        & .home-focus-subtitle-container
+          padding 0 5% !important
+
+        & .home-focus-subtitle-container:nth-child(1)
+          .home-focus-subtitle:before
+            height 33px
+            width 50px
+
+        & .home-focus-subtitle-container:nth-child(2)
+          .home-focus-subtitle:before
+            height 33px
+            width 65px
 
   .home-focusprocess
     padding 20px 0
@@ -419,11 +633,44 @@
       margin-left 34px
       max-width 190px
 
+  #home-big-panel
+    padding-left 20px
+    padding-right 20px
+
+    span
+      font-size 12px
+
 @media screen and (min-width 506px) and (max-width 862px)
   .home-cover
     background-position right
 
+@media screen and (min-width 787px) and (max-width 944px)
+  .home-ourprocess
+    &-cards-container
+      max-width 494px
 
-    
+@media screen and (max-width 380px)
+  .home-focus
+    &-info
+      & ul
+        width 220px
 
-    
+        & div
+          width 100%
+
+        & li
+          text-align center
+
+    &-subtitle
+      &-columns
+        .home-focus-subtitle-container:nth-child(1) .home-focus-subtitle:before,
+        .home-focus-subtitle-container:nth-child(2) .home-focus-subtitle:before
+          margin-left -10px
+
+  #home-big-panel
+    height 90px
+    padding-left 15px
+    padding-right 15px
+
+    span
+      font-size 12px

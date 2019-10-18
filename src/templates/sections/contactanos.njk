@@ -1,8 +1,83 @@
 {% extends "partials/base.njk" %}
 
-{% block meta %}
-<title>Contáctanos</title>
-{% endblock %}
+{% block title %}Contáctanos{% endblock %}
+
+{% set meta_description = "Dejanos tus datos y con gusto nos pondremos en contacto para ayudarte." %}
+{% set og_url = "http://wicore.mx/contactanos.html" %}
+{% set og_title = "Contáctanos | Wicore" %}
+{% set og_description = "Dejanos tus datos y con gusto nos pondremos en contacto para ayudarte." %}
+{% set og_img = "http://wicore.mx/img/seo/seo-contacto.png" %}
+{% set og_img_width = "1408" %}
+{% set og_img_height = "828" %}
 
 {% block content %}
+<div class="contact">
+  <h1 class="contact-title nunitosans-extrabold">Contáctanos</h1>
+  <div class="contact-form-card">
+    <div class="contact-form-card-content">
+      <!--[if lte IE 8]>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "4317137",
+          formId: "497c368d-c940-4765-8f3f-ca7c0624d8f7"
+      });
+      </script>
+    </div>
+  </div>
+  <div class="contact-panel nunitosans-regular">
+    <div class="contact-panel-content">
+      <div>
+        <a href="https://goo.gl/maps/hpLiJpnTefq" target="_blank">
+          <div class="contact-panel-info-container">
+            <img class="contact-icon-location" src="img/icons/icon-location.png" alt="Ícono de un pin en color blanco">
+            <div class="contact-panel-info">
+              <span class="nunitosans-bold">Centro de Distribución</span><br>
+              <span>Parque Industrial Tultipark II.</span><br>
+              <span>Tultitlán Edo. México CP 54948</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://goo.gl/maps/1E1c4aNpGXz" target="_blank">
+          <div class="contact-panel-info-container">
+            <img class="contact-icon-location" src="img/icons/icon-location.png" alt="Ícono de un pin en color blanco">
+            <div class="contact-panel-info">
+              <span class="nunitosans-bold">Oficinas</span><br>
+              <span>Torre del Árbol - Boulevard Manuel</span><br>
+              <span>Ávila Camacho #184, Piso 17, Reforma</span><br>
+              <span>Social, Miguel Hidalgo, Ciudad de México</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="contact-panel-separator"></div>
+      <div>
+        <div class="contact-panel-info-container align-icons">
+          <img class="contact-icon-mail" src="img/icons/icon-mail.png" alt="Ícono de un sobre en color blanco">
+          <a href="mailto:hola@wicore.mx">
+            <span class="contact-panel-info">hola@wicore.mx</span>
+          </a>
+        </div>
+        <a href="tel:5512091276">
+          <span class="contact-panel-info" style="margin-left: 0;">(55) 12-09-12-76</span>
+        </a>
+      </div>
+      <div class="contact-panel-separator"></div>
+      <div class="contact-panel-social-container">
+        <a href="https://www.linkedin.com/company/wicoremx/" target="_blank">
+          <div>
+            <img class="contact-panel-social" src="img/icons/icon-in-white.png" alt="Ícono de Linked In en color blanco">
+          </div>
+        </a>
+        <a href="https://www.facebook.com/WiCore-325975511257347/" target="_blank">
+          <div>
+            <img class="contact-panel-social" src="img/icons/icon-fb-white.png" alt="Ícono de Facebook en color blanco">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

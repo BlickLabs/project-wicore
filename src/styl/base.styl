@@ -24,6 +24,12 @@ body
       opacity 1
       z-index 9
 
+  .ful__container
+    padding: 57px 0
+
+    iframe
+      height 100vh
+
 a
   &, &:focus, &:hover, &:active
     text-decoration none
@@ -113,7 +119,11 @@ textarea
 
 @media screen and (max-width 786px)
   body
-    margin-bottom 560px
+    margin-bottom 490px
+
+@media screen and (max-width 460px)
+  body
+    margin-bottom 650px
 
 @import 'partials/navbar'
 

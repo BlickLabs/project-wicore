@@ -19,12 +19,37 @@
 .nav-strongblue
   align-items center
   background-color $wStrongBlue
+  box-shadow 0 6px 8px 0 rgba(0,0,0,0.2)
   height 57px
   transition all 0.3s
+
+.nav-strongblue
+  .link-decorator
+    opacity 0
+
+.nav-strongblue
+  .navbar-option-link:hover
+    .link-decorator
+      opacity 0
+
+// .nav-strongblue
+//   .active-link
+//     color #73b9f0
+
+// .nav-strongblue
+//   .navbar-option-link
+//     &.active-link-scroll,
+//     &:hover
+//       color #73b9f0
+//       transition all 0.6s
 
 .nav-transparent
   background-color transparent
   transition all 0.3s
+
+.nav-transparent
+  .navbar-option-link:hover
+    color #fff
 
 .phone-no-shadow
   -webkit-filter: drop-shadow(0 0 0)
@@ -32,8 +57,8 @@
   transition all 0.3s
 
 .phone-shadow
-  -webkit-filter: drop-shadow(-2px 1px 3px)
-  filter: drop-shadow(-2px 1px 3px)
+  -webkit-filter: drop-shadow(0 0 3px)
+  filter: drop-shadow(0 0 3px)
 
 .navbar-option-link
   color $wWhite
@@ -49,13 +74,13 @@
 
   &.active-link,
   &:hover
-    color $wWhite
+    color #73b9f0
     transition all 0.6s
 
-  &.active-link-scroll,
-  &:hover
-    color $wLightBlue
-    transition all 0.6s
+  // &.active-link-scroll,
+  // &:hover
+  //   color #73b9f0
+  //   transition all 0.6s
 
   &:hover
     .link-decorator
@@ -91,6 +116,12 @@
   position absolute
 
 .navbar-phone
+  color $wWhite
+  cursor pointer
+  font-size remify(13px)
+  letter-spacing 1.9px
+  text-transform uppercase
+
   &-container
     border-bottom 57px solid $wLightBlue
     border-left 22px solid transparent
@@ -126,6 +157,8 @@
     padding 0 18px
 
   .navbar-phone
+    font-size remify(15px)
+
     &-container
       display none
 
@@ -145,7 +178,7 @@
   .navbar-hamburguer
     width 33px
     height 33px
-    background-color $wStrongBlue
+    background-color transparent
     cursor pointer
     display flex
     justify-content center
@@ -156,14 +189,14 @@
     justify-content center
     
   .line-hamburguer-base
-    height 1px
+    height 2px
     background-color #fff
 
   .line-hamburguer-lg
-    width: 15px
+    width: 20px
     
   .line-hamburguer-md
-    width 7.5px
+    width 12px
     
   .margin-vertical-4px
     margin 4px 0px
@@ -206,7 +239,7 @@
   .hamburger-option-link
     color #fff
     cursor pointer
-    font-size remify(12)
+    font-size remify(15px)
     letter-spacing 1.4px
     text-transform uppercase
     transition all 0.2s

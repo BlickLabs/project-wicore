@@ -1,0 +1,472 @@
+.aboutus
+  margin-top 105px
+
+  &-title
+    color #4b4b4b
+    font-size remify(27px)
+    letter-spacing 5px
+    line-height 47px
+    text-align center
+    text-transform uppercase
+
+    &-container
+      margin-bottom 10px
+
+  &-subtitle
+    color #3c3c3c
+    font-size remify(20px)
+    letter-spacing 0.5px
+    line-height 24px
+    text-align center
+
+  &-cards
+    &-container
+      display flex
+      flex-wrap wrap
+      margin 65px auto 46px auto
+      max-width 1070px
+
+  &-card
+    align-items center
+    border solid 1px #f1f1f1
+    cursor pointer
+    display flex
+    flex-direction column
+    // height 155px
+    height 183px
+    justify-content center
+    margin 0 10px
+    // padding-top 24px
+    transition all 0.3s
+    // width 174px
+    width 198px
+
+    &:first-child
+      margin-left 0
+
+    &:last-child
+      margin-right 0
+
+    &:hover
+      border transparent
+      box-shadow 0 16px 33px 0 rgba(0, 0, 0, 0.24)
+      transition all 0.3s
+
+    &-title
+      color #545454
+      font-size remify(15px)
+      font-weight: normal
+      letter-spacing 0.3px
+      line-height 17px
+      text-align center
+
+  &-icon
+    &-container
+      height 39px
+      margin-bottom 28px
+
+    &-shipments
+      height 33px
+      width 39px
+
+    &-like
+      height 34px
+      width 35px
+
+    &-saving
+      height 26px
+      width 38px
+
+    &-increase
+      height 36px
+      width 35px
+
+    &-time
+      height 39px
+      width 39px
+
+  & .result
+    background-color #3483c0
+    padding 49px 30px 36px 30px
+
+    p
+      color #ffffff
+      font-size remify(20px)
+      letter-spacing 0.5px
+      text-align center
+
+    .first-description
+      font-weight normal
+      line-height 32px
+      margin 0 auto 44px auto
+      max-width 820px
+
+    .second-description
+      line-height 35px
+
+
+  &-why
+    background-image url("../img/backgrounds/about-bg-why.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    height 510px
+    padding 61px 38% 0 84px
+    position relative
+
+    &-title
+      color #fff
+      font-size remify(27px)
+      letter-spacing 0.6px
+      line-height 24px
+
+      &-container
+        margin-bottom 39px
+
+    &-list
+      color #fff
+      font-size remify(15px)
+      letter-spacing 0.55px
+      line-height 26px
+      list-style none
+      padding-left 0
+
+      & li
+        margin-bottom 20px
+
+    &-img
+      height 539px
+      width 460px
+
+      &-container
+        position absolute
+        right 0
+        top -14.5px
+
+  &-separator
+    background-color #cfcfcf
+    height 1px
+    width 100%
+
+    &-container
+      margin 115px 10% 91px 10%
+
+  &-leaders
+    display flex
+    flex-wrap wrap
+    justify-content center
+    margin 0 auto 140px auto
+
+    &-card
+      display flex
+      flex-direction column
+      width 306px
+
+      &:nth-child(2)
+        margin 0 0 0 56px
+
+    &-photo
+      height 202px
+      width 202px
+
+      &-container
+        margin-bottom 52px
+        text-align center
+
+    &-title
+      color #4b4b4b
+      font-size remify(20px)
+      letter-spacing 3.7px
+      line-height 47px
+      text-align center
+      text-transform uppercase
+
+      &-container
+        margin-bottom 15px
+
+    &-paragraph
+      color #272727
+      font-size remify(13px)
+      letter-spacing 0.6px
+      line-height 22px
+      text-align justify
+
+      &-container
+        height 218px
+
+    &-in
+      height 41px
+      width 41px
+
+      &-container
+        margin 35px auto 0 auto
+
+  & .benefits
+    display flex
+    flex-wrap wrap
+    margin 0 auto
+    padding 45px 0 18px 0
+    width 1016px
+
+    @media screen and (max-width 1020px)
+      width 762px
+
+    @media screen and (max-width 780px)
+      width 508px
+
+    @media screen and (max-width 510px)
+      width 254px
+
+    &-content
+      border solid 1px #f1f1f1
+      height 252px
+      margin 0 20px 48px 20px
+      padding 20px 0 0 17px
+      width 214px
+
+      &:nth-child(1) .benefits-icon
+        height 31px
+        width 53px
+
+      &:nth-child(2) .benefits-icon
+        height 42px
+        width 53px
+
+      &:nth-child(3) .benefits-icon
+        height 37px
+        width 41px
+
+      &:nth-child(4) .benefits-icon
+        height 28px
+        width 41px
+
+      &:nth-child(5) .benefits-icon
+        height 42px
+        width 37px
+
+      &:nth-child(6) .benefits-icon
+        height 25px
+        width 38px
+
+      &:nth-child(7) .benefits-icon
+        height 40px
+        width 40px
+
+      &:nth-child(8) .benefits-icon
+        height 40px
+        width 40px
+
+    &-icon
+      &-container
+        align-items center
+        display flex
+        height 42px
+        margin-bottom 10px
+
+    &-title
+      color #3482bf
+      font-size remify(14px)
+      letter-spacing 0.13px
+      line-height 21px
+      margin-bottom 7px
+
+    &-description
+      color #979797
+      font-size remify(13px)
+      letter-spacing 0.12px
+      line-height 21px
+      width 185px
+
+  & .operations
+    display flex
+    justify-content center
+    padding 98px 0 106px 0
+
+    @media screen and (max-width 850px)
+      align-items center
+      flex-direction column
+
+    &-card
+      align-items center
+      background-color #ffffff
+      border solid 1px #f1f1f1
+      display flex
+      height 159px
+      margin 18px
+      padding 0 28px
+      width 390px
+      
+      @media screen and (max-width 430px)
+        height auto
+        padding 20px
+        width 90%
+
+    &-card:nth-child(1) img
+      height 66px
+      min-width 73px
+      width 73px
+
+    &-card:nth-child(2) img
+      height 57px
+      min-width 52px
+      width 52px
+
+    & img
+      margin-right 36px
+
+      @media screen and (max-width 430px)
+        margin-right 25px
+
+    & h3
+      color #235da4
+      font-size remify(14px)
+      letter-spacing 0.13px
+      line-height 21px
+      margin-bottom 7px
+
+    & p
+      color #979797
+      font-size remify(13px)
+      font-weight normal
+      letter-spacing 0.12px
+      line-height 21px
+
+@media screen and (max-width 768px)
+  .aboutus
+    &-cards
+      &-container
+        max-width 582px
+
+    &-card
+      margin 0 10px 20px 10px
+
+    &-card:first-child
+      margin-left 10px
+
+    &-why
+      height auto
+      padding 60px 50px
+
+      &-img
+        &-container
+          display none
+
+    &-leaders
+      margin 0 30px 140px 30px
+
+      &-card:nth-child(2)
+        margin 0 0 0 40px
+
+      &-card:nth-child(3)
+        margin-top 24px
+
+@media screen and (min-width 600px) and (max-width 666px)
+  .aboutus
+    &-leaders
+      &-card
+        margin auto
+
+      &-card:nth-child(2)
+        margin 24px auto 0 auto
+
+      &-card:nth-child(3)
+        margin initial
+
+@media screen and (max-width 599px)
+  .aboutus
+    &-cards
+      &-container
+        max-width 480px
+
+    &-card
+      height 140px
+      margin 8px
+      width 143px
+
+      &-title
+        line-height 15px
+
+    &card:first-child
+      margin-left 8px
+
+    &-why
+      height auto
+      padding 30px
+
+      &-list
+        font-size remify(15px)
+        line-height 20px
+        padding-left 25px
+
+        li
+          margin-bottom 20px
+
+      &-img
+        &-container
+          display none
+
+    &-separator
+      &-container
+        margin 60px 10%
+
+    &-leaders
+      &-card
+        border solid 1px #f1f1f1
+        margin-left auto
+        margin-right auto
+        padding-bottom 20px
+        width 300px
+
+      &-card:nth-child(2)
+        margin 15px auto
+
+      &-photo
+        height 150px
+        width 150px
+
+        &-container
+          margin-bottom 20px
+
+      &-paragraph
+        font-size remify(15px)
+        line-height 18px
+
+        &-container
+          height auto
+          padding 0 20px
+
+@media screen and (max-width 494px)
+  .aboutus
+    &-cards
+      &-container
+        max-width 320px
+
+@media screen and (min-width 769px) and (max-width 1076px)
+  .aboutus
+    &-cards
+      &-container
+        max-width 666px
+
+    &-card
+      margin-bottom 24px
+
+    &-card:first-child
+      margin-left 24px
+
+    &-why
+      height 480px
+      padding 33px 52% 0 30px
+
+      &-title
+        &-container
+          margin-bottom 22px
+
+      &-list
+        line-height 22px
+
+      &-img
+        height 494px
+        width 422px
+
+        &-container
+          top -6.5px
