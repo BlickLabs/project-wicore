@@ -42,5 +42,8 @@
   },
   "dependencies": {
     "owl.carousel": "^2.2.0"
+  },
+  "resolutions": {
+    "gift": "^0.10.2"
   }
 }

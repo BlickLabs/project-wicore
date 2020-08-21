@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93c7819e-6da2-4643-8042-b0f0c7c2f482" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/partials/base.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/partials/base.njk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/sections/contactanos.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/contactanos.njk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/sections/index.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/sections/index.njk" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598047952304</updated>
       <workItem from="1598047959361" duration="88000" />
-      <workItem from="1598048095100" duration="1526000" />
+      <workItem from="1598048095100" duration="2788000" />
     </task>
     <servers />
   </component>
@@ -74,18 +76,34 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1424" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598050249792">
+    <state x="1424" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598052564130">
       <screen x="1280" y="0" width="1360" height="768" />
     </state>
-    <state x="1424" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/1280.0.1360.768/0.0.1280.800@1280.0.1360.768" timestamp="1598050249792" />
+    <state x="1424" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/1280.0.1360.768/0.0.1280.800@1280.0.1360.768" timestamp="1598052564130" />
+    <state width="1339" height="197" key="GridCell.Tab.0.bottom" timestamp="1598052565181">
+      <screen x="1280" y="0" width="1360" height="768" />
+    </state>
+    <state width="1339" height="197" key="GridCell.Tab.0.bottom/1280.0.1360.768/0.0.1280.800@1280.0.1360.768" timestamp="1598052565181" />
+    <state width="1339" height="197" key="GridCell.Tab.0.center" timestamp="1598052565179">
+      <screen x="1280" y="0" width="1360" height="768" />
+    </state>
+    <state width="1339" height="197" key="GridCell.Tab.0.center/1280.0.1360.768/0.0.1280.800@1280.0.1360.768" timestamp="1598052565179" />
+    <state width="1339" height="197" key="GridCell.Tab.0.left" timestamp="1598052565177">
+      <screen x="1280" y="0" width="1360" height="768" />
+    </state>
+    <state width="1339" height="197" key="GridCell.Tab.0.left/1280.0.1360.768/0.0.1280.800@1280.0.1360.768" timestamp="1598052565177" />
+    <state width="1339" height="197" key="GridCell.Tab.0.right" timestamp="1598052565180">
+      <screen x="1280" y="0" width="1360" height="768" />
+    </state>
+    <state width="1339" height="197" key="GridCell.Tab.0.right/1280.0.1360.768/0.0.1280.800@1280.0.1360.768" timestamp="1598052565180" />
     <state x="1469" y="0" key="SettingsEditor" timestamp="1598048496092">
       <screen x="1280" y="0" width="1360" height="768" />
     </state>
     <state x="1469" y="0" key="SettingsEditor/1280.0.1360.768/0.0.1280.800@1280.0.1360.768" timestamp="1598048496092" />
     <state x="1469" y="23" key="SettingsEditor/1280.23.1360.745/0.23.1280.709@1280.23.1360.745" timestamp="1598048059844" />
-    <state x="1625" y="92" width="670" height="676" key="search.everywhere.popup" timestamp="1598048220178">
+    <state x="1625" y="92" width="670" height="676" key="search.everywhere.popup" timestamp="1598050540094">
       <screen x="1280" y="0" width="1360" height="768" />
     </state>
-    <state x="1625" y="92" width="670" height="676" key="search.everywhere.popup/1280.0.1360.768/0.0.1280.800@1280.0.1360.768" timestamp="1598048220178" />
+    <state x="1625" y="92" width="670" height="676" key="search.everywhere.popup/1280.0.1360.768/0.0.1280.800@1280.0.1360.768" timestamp="1598050540094" />
   </component>
 </project>
